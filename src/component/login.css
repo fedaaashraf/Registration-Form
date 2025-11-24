@@ -1,4 +1,4 @@
-/* الفيديو يغطي الشاشة كلها بدون تأثير */
+
 #bg-video {
   position: fixed;
   top: 0; left: 0;
@@ -8,7 +8,7 @@
   z-index: -1;
 }
 
-/* الكونتينر اللي في النص */
+
 .login-container {
   position: relative;
   z-index: 10;
@@ -20,15 +20,15 @@
   padding: 20px;
 }
 
-/* الكارد السماوي الشفاف */
+
 .login-card {
-  width: 560px;                    /* كبير جدًا ومريح */
+  width: 560px;                   
   max-width: 96%;
-  padding: 70px 65px;              /* مسافات فخمة من جوا */
+  padding: 70px 65px;              
   background: rgba(135, 206, 250, 0.18);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-radius: 36px;             /* حواف مدورة أكبر عشان تبقى أجمد */
+  border-radius: 36px;             
   border: 2.5px solid rgba(135, 206, 250, 0.45);
   box-shadow: 
     0 30px 80px rgba(0, 0, 0, 0.4),
@@ -65,15 +65,15 @@
 
 .input-field .input {
   width: 100%;
-  padding: 10px 14px 10px 42px;        /* أصغر من كده مفيش ومضمون مايطلعش بره */
+  padding: 10px 14px 10px 42px;        
   background: rgba(255, 255, 255, 0.16);
   border: 1.3px solid rgba(135, 206, 250, 0.4);
   outline: none;
   border-radius: 50px;
   color: white;
-  font-size: 13.8px;                  /* خط صغير جدًا وأنيق */
+  font-size: 13.8px;                  
   transition: all 0.3s ease;
-  box-sizing: border-box;             /* مهم جدًا عشان البوردر والـ padding مايزودوش العرض */
+  box-sizing: border-box;             
 }
 
 .input-field i {
@@ -82,7 +82,7 @@
   left: 14px;
   transform: translateY(-50%);
   color: #87CEFA;
-  font-size: 15.5px;                  /* أيقونة صغيرة متناسقة */
+  font-size: 15.5px;                  
   pointer-events: none;
 }
 .submit {
