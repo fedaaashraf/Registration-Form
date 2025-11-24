@@ -1,0 +1,135 @@
+/* الفيديو يغطي الشاشة كلها بدون تأثير */
+#bg-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* الكونتينر اللي في النص */
+.login-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* الكارد السماوي الشفاف */
+.login-card {
+  width: 560px;                    /* كبير جدًا ومريح */
+  max-width: 96%;
+  padding: 70px 65px;              /* مسافات فخمة من جوا */
+  background: rgba(135, 206, 250, 0.18);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 36px;             /* حواف مدورة أكبر عشان تبقى أجمد */
+  border: 2.5px solid rgba(135, 206, 250, 0.45);
+  box-shadow: 
+    0 30px 80px rgba(0, 0, 0, 0.4),
+    inset 0 0 40px rgba(135, 206, 250, 0.18);
+  text-align: center;
+  color: white;
+}
+
+.top span {
+  font-size: 16px;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
+.top h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 10px 0 40px;
+  background: linear-gradient(135deg, #87CEFA, #00BFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.input-field .input {
+  width: 100%;
+  padding: 10px 14px 10px 42px;        /* أصغر من كده مفيش ومضمون مايطلعش بره */
+  background: rgba(255, 255, 255, 0.16);
+  border: 1.3px solid rgba(135, 206, 250, 0.4);
+  outline: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 13.8px;                  /* خط صغير جدًا وأنيق */
+  transition: all 0.3s ease;
+  box-sizing: border-box;             /* مهم جدًا عشان البوردر والـ padding مايزودوش العرض */
+}
+
+.input-field i {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #87CEFA;
+  font-size: 15.5px;                  /* أيقونة صغيرة متناسقة */
+  pointer-events: none;
+}
+.submit {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #87CEFA, #00BFFF);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 8px 25px rgba(135, 206, 250, 0.4);
+}
+
+.submit:hover:not(:disabled) {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(135, 206, 250, 0.6);
+}
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.two-col a {
+  color: #87CEFA;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.two-col a:hover {
+  text-decoration: underline;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.error {
+  color: #ff8a80;
+  font-size: 13px;
+  margin-top: 6px;
+  text-align: left;
+  padding-left: 15px;
+}
